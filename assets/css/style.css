@@ -17,6 +17,7 @@
     --drop_wbr: #D5001F;
     --drop_designit_large: #F5F5F5;
     --drop_topps: #FF1C1C;
+    --drop_plan:#DBDBDD;
     --drop_clearch: #FFD830;
 }
 
@@ -29,6 +30,7 @@ img{
     padding: 6px 10px;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .container_primary,
@@ -119,7 +121,7 @@ h1{
     padding-bottom: 3rem;
 }
 
-.business_plan span{
+.business_plan>span{
     padding-right: 4rem;
 }
 
@@ -130,15 +132,73 @@ h1{
 
 .row{
     display: flex;
+    gap: 3rem;
 }
 
 .col-4{
     width: calc(100% / 12 * 4);
-    background-color: #FF1C1C;
-    height: 100px;
+    border: 1px solid var(--drop_plan);
 }
 
+.type{
+    border-bottom: 1px solid var(--drop_plan);
+    text-align: center;
+    padding: 1rem 0;
+}
 
+.plan{
+    margin: 2rem;
+    font-size: 13px;
+}
 
+.plan h3{
+    padding-bottom: 1rem;
+    font-size: 24px;
+}
 
+.costo{
+    padding-bottom: 0.75rem;
+}
+
+.frequenza{
+color: gray;
+}
+
+.frequenza {
+    padding-bottom: 3rem;
+}
+
+.plan .primary_btn{
+    display: block;
+    padding: 8px 22px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.plan hr{
+    width: 20%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.plan h5{
+    font-size: 15px;
+    padding-bottom: 2rem;
+}
+
+.plan ul{
+    list-style-type: none;
+}
+
+.fa-ul{
+    margin-left: 1rem;
+}
+
+.fa-ul li{
+    padding: 10px 0;
+}
+
+.blue i{
+    color: var(--drop_start);
+}
 /* #endregion Main */
