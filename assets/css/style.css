@@ -28,8 +28,17 @@ img{
     background-color: var(--drop_start);
     padding: 6px 10px;
     color: white;
+    text-decoration: none;
 }
 
+.container_primary{
+ margin: auto;
+ width: 63%;   
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /* #endregion Common */
 
 /* #region Utilities */
@@ -58,3 +67,38 @@ header img{
     vertical-align: middle;
 }
 /* #endregion Header */
+
+/* #region Main */
+.jumbo::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.jumbo img{
+    width: 800px;
+    float: right;
+}
+
+.unique_place{
+    padding-top: 1rem;
+    background-color: var(--drop_jumbo);
+    height: 43.75rem;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 70px;
+    margin: 2.75rem 0;
+}
+
+.jumbo a{
+    margin: 2rem 0;
+    display: inline-block;
+}
+
+.fa-arrow-down{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+/* #endregion Main */
