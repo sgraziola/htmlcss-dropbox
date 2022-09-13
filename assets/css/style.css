@@ -86,13 +86,14 @@ header img{
 /* #endregion Header */
 
 /* #region Main */
-.jumbo::after{
+.jumbo::after,
+.partner_drop::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.jumbo img{
+.jumbo img {
     width: 68%;
     float: right;
 }
@@ -160,7 +161,7 @@ h1{
     font-size: 14px;
 }
 
-.plan h3{
+h3{
     padding-bottom: 1rem;
     font-size: 24px;
 }
@@ -232,4 +233,29 @@ color: gray;
 .type_bottom .plan{
     position: relative;
 }
+
+.partner_drop img{
+    float: left;
+    width: 62%;
+    margin-right: 3rem;
+}
+
+.partner_drop{
+    margin: 9rem 0;
+}
+
+.partner{
+    padding: 3rem 0.875rem;
+}
+
+.partner a {
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 8px 15px;
+    display: inline-block;
+    border: 1px solid;
+    color: var(--drop_foot);
+    box-shadow: 2px 2px 2px var(--drop_plan);
+}
+
 /* #endregion Main */
