@@ -125,7 +125,7 @@ h1{
 
 h2{
     font-size: 36px;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .business_plan>span{
@@ -138,6 +138,10 @@ h2{
 }
 .container_fluid{
     width: 100%;
+}
+
+.container_fluid h2{
+    padding-bottom: 3rem;
 }
 
 .row{
@@ -270,7 +274,9 @@ h5{
     padding: 1rem 0px;
 }
 
-
+.call_to_action h2{
+    padding-bottom: 3rem;
+}
 
 .call_to_action {
     margin: 10rem 0;
@@ -372,7 +378,6 @@ h5{
     margin: 8rem 0;
     padding-top: 1rem;
 }
-
 .question{
     border-top: 1px solid var(--drop_border);
     border-bottom: 1px solid var(--drop_border);
