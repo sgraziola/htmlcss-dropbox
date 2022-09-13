@@ -21,6 +21,8 @@
     --drop_clearch: #FFD830;
     --drop_border: #BBBBBB;
     --drop_lang: #999894;
+    --drop_hr: #D5D5D7;
+
 }
 
 img{
@@ -145,6 +147,12 @@ h2{
     margin-bottom: 3rem;
 }
 
+.col-6{
+    width: calc(100% / 12 * 6);
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
 .type{
     border-bottom: 1px solid var(--drop_plan);
     text-align: center;
@@ -265,25 +273,70 @@ h5{
     width: 60%;
 }
 
-.customers_left{
-    background-color: #0093CE;
+.customers_large{
+    background-color:var(--drop_designit_large);
+    padding: 3rem 4rem;
 }
 
-.customers_right{
-    background-color: #D5001F;
+.customers .row{
+    flex-wrap: wrap;
+    gap:unset;
 }
 
-.customers{
-    background-color: #A2D39B;
+.customers img{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.customers_left,
 .customers,
-.customers_right{
-    height: 500px;
-    width: 33.33333333%;
-
+.customers_large{
+    flex-basis: 34%;
 }
+
+.customers_large hr{
+    margin: 3rem 0;
+    width: 20%;
+    color: var(--drop_hr);
+}
+
+.customers_large img{
+    width: 50%;
+}
+
+.tag{
+    margin-top: 3rem;
+}
+
+.customers .dis{
+    background-color: var(--drop_designit);
+    border: 15px solid var(--drop_design_bord);
+}
+.customers .asu{
+    background-color: var(--drop_asu);
+}
+.customers .flo{
+    background-color: var(--drop_florida);
+}
+.customers .topps{
+    background-color: var(--drop_topps);
+}
+.customers .wbr{
+    background-color: var(--drop_wbr);
+}
+.customers .hearst{
+    background-color: var(--drop_jumbo);
+}
+.customers .lon_planet{
+    background-color: var(--drop_lonelyplanet);
+}
+.customers .clear_ch{
+    background-color: var(--drop_clearch);
+}
+
+
 
 .company{
     background-color:var(--drop_jumbo);
@@ -354,7 +407,6 @@ h5{
 }
 
 .footer_top {
-    border-bottom: 1px solid white;
     padding-bottom: 6rem;
 }
 
@@ -365,6 +417,10 @@ h5{
 .language {
     margin-top: 3rem;
     margin-bottom: 2rem;
+}
+
+#footer_site hr{
+    width: 10%;
 }
 /* #endregion Footer */
 
