@@ -39,11 +39,11 @@ img{
 }
 
 .container_primary{
-    width: 60%;   
+    width: 63%;   
 }
 
 .container_secondary{
-    width: 50%;
+    width: 53%;
 }
 
 body{
@@ -54,6 +54,10 @@ body{
 /* #region Utilities */
 .d_flex{
     display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 
@@ -101,7 +105,7 @@ header img{
 .unique_place{
     padding-top: 1rem;
     background-color: var(--drop_jumbo);
-    height: 42rem;
+    height: 43rem;
 }
 
 h1{
@@ -117,14 +121,14 @@ h1{
 
 .fa-arrow-down{
     font-size: 3rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .business_plan{
     padding-top: 9rem;
 }
 
-.business_plan h2{
+h2{
     font-size: 36px;
     padding-bottom: 3rem;
 }
@@ -140,7 +144,7 @@ h1{
 
 .row{
     display: flex;
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 .col-4{
@@ -158,7 +162,7 @@ h1{
 
 .plan{
     margin: 24px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 h3{
@@ -258,4 +262,16 @@ color: gray;
     box-shadow: 2px 2px 2px var(--drop_plan);
 }
 
+.operations_text p {
+    padding: 1rem 0px;
+}
+
+.operations{
+    border: none;
+}
+
+.call_to_action {
+    margin: 7rem 0;
+    width: 60%;
+}
 /* #endregion Main */
