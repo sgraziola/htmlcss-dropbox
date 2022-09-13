@@ -47,7 +47,7 @@ img{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 /* #endregion Common */
 
@@ -60,6 +60,13 @@ body{
 /* #endregion Utilities */
 
 /* #region Header */
+
+#header_site {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+}
 .container_head{
     justify-content: space-between;
    /*  position: fixed;
@@ -86,14 +93,14 @@ header img{
 }
 
 .jumbo img{
-    width: 800px;
+    width: 68%;
     float: right;
 }
 
 .unique_place{
     padding-top: 1rem;
     background-color: var(--drop_jumbo);
-    height: 43.75rem;
+    height: 42rem;
 }
 
 h1{
@@ -109,7 +116,7 @@ h1{
 
 .fa-arrow-down{
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .business_plan{
@@ -117,7 +124,7 @@ h1{
 }
 
 .business_plan h2{
-    font-size: 35px;
+    font-size: 36px;
     padding-bottom: 3rem;
 }
 
@@ -144,12 +151,13 @@ h1{
 .type{
     border-bottom: 1px solid var(--drop_plan);
     text-align: center;
-    padding: 1rem 0;
+    padding: 9px 0;
+    font-size: 14px;
 }
 
 .plan{
-    margin: 2rem;
-    font-size: 13px;
+    margin: 24px;
+    font-size: 14px;
 }
 
 .plan h3{
