@@ -19,6 +19,7 @@
     --drop_topps: #FF1C1C;
     --drop_plan:#DBDBDD;
     --drop_clearch: #FFD830;
+    --drop_border: #BBBBBB;
 }
 
 img{
@@ -50,18 +51,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 /* #endregion Common */
-
-/* #region Utilities */
-.d_flex{
-    display: flex;
-}
-
-.wrap{
-    flex-wrap: wrap;
-}
-
-
-/* #endregion Utilities */
 
 /* #region Header */
 
@@ -177,7 +166,7 @@ h3{
 }
 
 .frequenza{
-color: gray;
+color: var(--drop_border);
 }
 
 .frequenza {
@@ -197,7 +186,7 @@ color: gray;
     margin-bottom: 3rem;
 }
 
-.plan h5{
+h5{
     font-size: 15px;
     padding-bottom: 2rem;
 }
@@ -268,9 +257,7 @@ color: gray;
     padding: 1rem 0px;
 }
 
-.operations{
-    border: none;
-}
+
 
 .call_to_action {
     margin: 10rem 0;
@@ -327,5 +314,34 @@ color: gray;
     padding-top: 1rem;
 }
 
+.question{
+    border-top: 1px solid var(--drop_border);
+    border-bottom: 1px solid var(--drop_border);
+    position: relative;
+}
 
+.question .fa-solid{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.question h5{
+    padding-top: 2rem;
+}
 /* #endregion Main */
+
+/* #region Utilities */
+.d_flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.operations{
+    border: none;
+}
+
+/* #endregion Utilities */
