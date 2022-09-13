@@ -293,7 +293,8 @@ color: gray;
 .customers,
 .customers_right{
     height: 500px;
-    width: 500px;
+    width: 33.33333333%;
+
 }
 
 .company{
@@ -320,4 +321,11 @@ color: gray;
     top: 0;
     right: 0;
 }
+
+.faq{
+    margin: 8rem 0;
+    padding-top: 1rem;
+}
+
+
 /* #endregion Main */
