@@ -1,11 +1,11 @@
 /* #region Common */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --drop_foot: #000000;
     --drop_start: #0061FF;
     --drop_florida: #0093CE;
@@ -17,7 +17,7 @@
     --drop_wbr: #D5001F;
     --drop_designit_large: #F5F5F5;
     --drop_topps: #FF1C1C;
-    --drop_plan:#DBDBDD;
+    --drop_plan: #DBDBDD;
     --drop_clearch: #FFD830;
     --drop_border: #BBBBBB;
     --drop_lang: #999894;
@@ -25,11 +25,11 @@
 
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.primary_btn{
+.primary_btn {
     background-color: var(--drop_start);
     padding: 6px 10px;
     color: white;
@@ -42,17 +42,18 @@ img{
     margin: auto;
 }
 
-.container_primary{
-    width: 63%;   
+.container_primary {
+    width: 63%;
 }
 
-.container_secondary{
+.container_secondary {
     width: 53%;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
+
 /* #endregion Common */
 
 /* #region Header */
@@ -63,22 +64,24 @@ body{
     z-index: 99;
     background-color: white;
 }
-.container_head{
+
+.container_head {
     justify-content: space-between;
-   /*  position: fixed;
+    /*  position: fixed;
     width: 100%; */
     margin: 1rem;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: var(--drop_foot);
     padding: 0 1.5rem;
 }
 
-header img{
+header img {
     vertical-align: middle;
 }
+
 /* #endregion Header */
 
 /* #region Main */
@@ -94,173 +97,217 @@ header img{
     float: right;
 }
 
-.unique_place{
+.unique_place {
     padding-top: 4rem;
     background-color: var(--drop_jumbo);
     height: 46rem;
 }
 
-h1{
+h1 {
     font-weight: 900;
     font-size: 70px;
     margin: 2.75rem 0;
 }
 
-.jumbo .primary_btn{
+.jumbo .primary_btn {
     margin: 2rem 0;
     display: inline-block;
 }
 
 
 
-.fa-arrow-down{
+.fa-arrow-down {
     color: var(--drop_foot);
     font-size: 3rem;
     margin-top: 5rem;
 }
 
-.business_plan{
+.business_plan {
     padding-top: 9rem;
 }
 
-h2{
+h2 {
     font-size: 36px;
     padding-bottom: 1rem;
 }
 
-.business_plan>span{
+.business_plan>span {
     padding-right: 4rem;
 }
 
-#billing{
+#billing {
     padding-bottom: 3rem;
     padding-top: 3.5rem;
 }
 
-#mensile{
-    padding-right: 2rem;
+.choice {
+    padding: 0 2rem;
+    font-size: 14px;
+    position: relative;
 }
-.container_fluid{
+
+.choice input {
+    display: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.choice input:checked~.checkmark {
+    background-color: var(--drop_start);
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.choice input:checked~.checkmark:after {
+    display: block;
+}
+
+.choice .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: white;
+}
+
+.container_fluid {
     width: 100%;
 }
 
-.container_fluid h2{
+.container_fluid h2 {
     padding-bottom: 3rem;
 }
 
-.row{
+.row {
     display: flex;
     gap: 3.5rem;
 }
 
-.col-4{
+.col-4 {
     width: calc(100% / 12 * 4);
     border: 1px solid var(--drop_plan);
     margin-bottom: 3rem;
 }
 
-.col-6{
+.col-6 {
     width: calc(100% / 12 * 6);
     aspect-ratio: 1/1;
     position: relative;
 }
 
-.type{
+.type {
     border-bottom: 1px solid var(--drop_plan);
     text-align: center;
     padding: 9px 0;
     font-size: 14px;
 }
 
-.plan{
+.plan {
     margin: 24px;
     font-size: 15px;
 }
 
-h3{
+h3 {
     padding-bottom: 1rem;
     font-size: 24px;
 }
 
-.costo{
+.costo {
     padding-bottom: 0.75rem;
 }
 
-.frequenza{
-color: var(--drop_border);
+.frequenza {
+    color: var(--drop_border);
 }
 
 .frequenza {
     padding-bottom: 3rem;
 }
 
-.plan .primary_btn{
+.plan .primary_btn {
     display: block;
     padding: 8px 22px;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.plan hr{
+.plan hr {
     width: 20%;
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
-h5{
+h5 {
     font-size: 15px;
     padding-bottom: 2rem;
 }
 
-.plan ul{
+.plan ul {
     list-style-type: none;
 }
 
-.fa-ul{
+.fa-ul {
     margin-left: 1rem;
 }
 
-.fa-ul li{
+.fa-ul li {
     padding: 10px 0;
 }
 
-.blue i{
+.blue i {
     color: var(--drop_start);
 }
 
-.type_bottom{
+.type_bottom {
     border: 1px solid var(--drop_plan);
 }
 
-.solutions{
+.solutions {
     padding-top: 3rem;
 }
 
-.primary_bot{
+.primary_bot {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.type_bottom .primary_btn{
+.type_bottom .primary_btn {
     margin: 0;
 }
 
-.type_bottom .plan{
+.type_bottom .plan {
     position: relative;
 }
 
-.partner_drop img{
+.partner_drop img {
     float: left;
     width: 62%;
     margin-right: 3rem;
 }
 
-.partner_drop{
+.partner_drop {
     margin: 9rem 0;
 }
 
-.partner{
+.partner {
     padding: 3rem 0.875rem;
 }
 
@@ -278,7 +325,7 @@ h5{
     padding: 1rem 0px;
 }
 
-.call_to_action h2{
+.call_to_action h2 {
     padding-bottom: 3rem;
 }
 
@@ -287,88 +334,95 @@ h5{
     width: 60%;
 }
 
-.customers_large{
-    background-color:var(--drop_designit_large);
+.customers_large {
+    background-color: var(--drop_designit_large);
     padding: 3rem 4rem;
 }
 
-.customers .row{
+.customers .row {
     flex-wrap: wrap;
-    gap:unset;
+    gap: unset;
 }
 
-.customers img{
+.customers img {
     width: 40%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter:invert(100%)
+    filter: invert(100%)
 }
 
 .customers,
-.customers_large{
+.customers_large {
     flex-basis: 34%;
 }
 
-.customers_large hr{
+.customers_large hr {
     margin: 3rem 0;
     width: 20%;
     color: var(--drop_hr);
 }
 
-.customers_large img{
+.customers_large img {
     width: 50%;
 }
 
-.tag{
+.tag {
     margin-top: 3rem;
 }
 
-.customers .dis{
+.customers .dis {
     background-color: var(--drop_designit);
     border: 15px solid var(--drop_design_bord);
 }
-.customers .asu{
+
+.customers .asu {
     background-color: var(--drop_asu);
 }
-.customers .flo{
+
+.customers .flo {
     background-color: var(--drop_florida);
 }
-.customers .topps{
+
+.customers .topps {
     background-color: var(--drop_topps);
 }
-.customers .wbr{
+
+.customers .wbr {
     background-color: var(--drop_wbr);
 }
-.customers .hearst{
+
+.customers .hearst {
     background-color: var(--drop_jumbo);
 }
-.customers .lon_planet{
+
+.customers .lon_planet {
     background-color: var(--drop_lonelyplanet);
 }
-.customers .clear_ch{
+
+.customers .clear_ch {
     background-color: var(--drop_clearch);
 }
 
 
 
-.company{
-    background-color:var(--drop_jumbo);
+.company {
+    background-color: var(--drop_jumbo);
     color: var(--drop_asu);
     padding: 8rem 0;
 }
 
-.company .container_secondary{
+.company .container_secondary {
     position: relative;
 }
 
-.company h2{
+.company h2 {
     width: 50%;
     padding: 0;
 }
 
-.company a{    
+.company a {
     background-color: white;
     color: black;
     text-decoration: none;
@@ -378,42 +432,46 @@ h5{
     right: 0;
 }
 
-.faq{
+.faq {
     margin: 8rem 0;
     padding-top: 1rem;
 }
-.question{
+
+.question {
     border-top: 1px solid var(--drop_border);
     border-bottom: 1px solid var(--drop_border);
     position: relative;
 }
 
-.question .fa-solid{
+.question .fa-solid {
     position: absolute;
     top: 50%;
     right: 5%;
 }
 
-.question h5{
+.question h5 {
     padding-top: 2rem;
 }
+
 /* #endregion Main */
 
 /* #region Footer */
-#footer_site .container_fluid{
+#footer_site .container_fluid {
     background-color: var(--drop_foot);
     color: white;
     padding: 2rem 0;
 }
-.info{
+
+.info {
     flex-direction: column;
 }
 
-.info h3{
+.info h3 {
     margin-top: 4rem;
     margin-bottom: 1rem;
 }
-.info a{
+
+.info a {
     padding-bottom: 0.75rem;
     text-decoration: none;
     color: white;
@@ -424,7 +482,7 @@ h5{
     padding-bottom: 6rem;
 }
 
-.footer_bot{
+.footer_bot {
     color: var(--drop_lang);
 }
 
@@ -433,22 +491,25 @@ h5{
     margin-bottom: 2rem;
 }
 
-#footer_site hr{
+#footer_site hr {
     width: 10%;
 }
+
 /* #endregion Footer */
 
 /* #region Utilities */
-.d_flex{
+.d_flex {
     display: flex;
 }
-.operations{
+
+.operations {
     border: none;
 }
 
-.space_between{
+.space_between {
     justify-content: space-between;
 }
+
 /* #endregion Utilities */
 
 /* 
