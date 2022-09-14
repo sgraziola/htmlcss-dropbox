@@ -95,12 +95,16 @@ header img {
 .jumbo img {
     width: 68%;
     float: right;
+    margin-bottom: -4rem;
+}
+
+.jumbo{
+    position: relative;
 }
 
 .unique_place {
     padding-top: 4rem;
     background-color: var(--drop_jumbo);
-    height: 46rem;
 }
 
 h1 {
@@ -114,12 +118,12 @@ h1 {
     display: inline-block;
 }
 
-
-
 .fa-arrow-down {
     color: var(--drop_foot);
     font-size: 3rem;
-    margin-top: 5rem;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
 }
 
 .business_plan {
