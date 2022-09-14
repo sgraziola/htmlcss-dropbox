@@ -461,13 +461,38 @@ h5 {
 
 .question .fa-solid {
     position: absolute;
-    top: 50%;
+    top: 40px;
     right: 5%;
 }
 
 .question h5 {
     padding-top: 2rem;
 }
+
+.question p{
+    font-size: 15px;
+    padding-bottom: 2rem;
+    display: none;
+}
+
+.question:hover p{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fa-chevron-up{
+    display: none;
+}
+
+.question:hover .fa-chevron-up{
+    display: inline;
+}
+
+.question:hover .fa-chevron-down{
+    display: none;
+}
+
+
 
 /* #endregion Main */
 
@@ -527,9 +552,3 @@ h5 {
 }
 
 /* #endregion Utilities */
-
-/* 
-todolist:
--checkbox
--effetti
- */
