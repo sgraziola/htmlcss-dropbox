@@ -29,6 +29,10 @@ img {
     max-width: 100%;
 }
 
+.primary_btn:hover {
+    background-color: #008cff;
+}
+
 .primary_btn {
     background-color: var(--drop_start);
     padding: 6px 10px;
@@ -63,19 +67,23 @@ body {
     width: 100%;
     z-index: 99;
     background-color: white;
+    box-shadow: 0 0 5px var(--drop_border);
 }
 
 .container_head {
     justify-content: space-between;
-    /*  position: fixed;
-    width: 100%; */
     margin: 1rem;
 }
 
-header a {
+.pages {
     text-decoration: none;
     color: var(--drop_foot);
     padding: 0 1.5rem;
+    padding-bottom: 20px;
+}
+
+.pages:hover {
+    border-bottom: 3px solid black;
 }
 
 header img {
@@ -98,7 +106,7 @@ header img {
     margin-bottom: -4rem;
 }
 
-.jumbo{
+.jumbo {
     position: relative;
 }
 
@@ -320,9 +328,13 @@ h5 {
     margin-top: 2rem;
     padding: 8px 15px;
     display: inline-block;
-    border: 1px solid;
+    border: 1px solid var(--drop_foot);
     color: var(--drop_foot);
     box-shadow: 2px 2px 2px var(--drop_plan);
+}
+
+.lighter:hover {
+    color: gray;
 }
 
 .operations_text p {
