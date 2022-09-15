@@ -389,7 +389,7 @@ h5 {
 
 .customers .dis {
     background-color: var(--drop_designit);
-    border: 15px solid var(--drop_design_bord);
+    box-shadow: 0 0 0 1rem var(--drop_design_bord) inset;
 }
 
 .customers .asu {
